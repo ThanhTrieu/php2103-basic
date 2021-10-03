@@ -1,10 +1,18 @@
 <?php
 // xu ly ve file php
-$fopen = fopen('../public/data.txt','r');
+$fopen = fopen('../public/data.txt','a+');
 if($fopen){
-    //echo "da co the ket noi mo vao file";
-    $data = fread($fopen, filesize('../public/data.txt'));
-    echo $data;
+    // ghi file
+    $content = 'learning php';
+    fwrite($fopen, $content);
+    
+    // vi dung luong file da thay doi - can mo lai file de doc du lieu
+    $f = fopen('../public/data.txt','r');
+    $data = fread($f, filesize('../public/data.txt'));
+
+    // dong file
+    fclose($f);
+    fclose($fopen);
 } else {
     echo "Khong the mo duoc file";
 }
