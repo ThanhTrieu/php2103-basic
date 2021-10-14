@@ -1,8 +1,8 @@
 <?php
 
-namespace oop\controller;
+namespace controller;
 
-use oop\model\Product_model;
+use model\Product_model;
 // khong can require file Product_model
 
 class ProductController

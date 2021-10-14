@@ -1,6 +1,6 @@
 <?php
 
-namespace oop\model;
+namespace model;
 
 class Product_model
 {

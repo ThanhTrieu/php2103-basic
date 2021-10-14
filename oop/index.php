@@ -3,12 +3,10 @@
 //namespace OOP;
 
 require 'bootstrap/App.php';
-use oop\bootstrap\App;
-use oop\controller\ProductController;
-
+use bootstrap\App;
 new App();
 
-$pd = new ProductController();
+$pd = new \controller\ProductController;
 
 // goi duoc phuong thuc lay data tu controller
 $data = $pd->getDataView();
