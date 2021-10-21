@@ -2,6 +2,8 @@
 
 namespace bootstrap;
 
+// test
+
 // Noi nay se la noi giup cho viec autoload file
 // se la thang trung gian - giup tu dong load file o noi nhung noi mong muon
 
